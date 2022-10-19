@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">memoryGame</string>
+    <string name="timer_val">00:00</string>
+    <string name="easy">Easy</string>
+    <string name="eassy">eassy</string>
+    <string name="mid">mid</string>
+    <string name="hard">hard</string>
+    <string name="help">help</string>
+</resources>
