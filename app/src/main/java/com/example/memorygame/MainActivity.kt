@@ -38,14 +38,13 @@ class MainActivity : AppCompatActivity() {
         binding.hardButton.setOnClickListener {
             difficulty = binding.hardButton.tag.toString().toInt() - 1
             changeScreen()
-
         }
         binding.helpButton.setOnClickListener {
             helpText.visibility = View.VISIBLE
         }
-            binding.root.setOnClickListener {
-                helpText.visibility = View.INVISIBLE
-            }
+        binding.root.setOnClickListener {
+            helpText.visibility = View.INVISIBLE
+        }
     }
     private fun changeScreen(){
         val intent = Intent(this, InGameActivity::class.java)
