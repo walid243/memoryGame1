@@ -57,9 +57,12 @@ class InGameActivity : AppCompatActivity() {
         }
         return imageViewList as ArrayList<View>
     }
-    fun createImageView(rowId:Int, id:Int){
+    private fun createImageView(rowId:Int, id:Int){
         val imageView = ImageView(this)
         imageView.id = ("$rowId$id").toInt()
+        imageView.layoutParams.width = 100
+        imageView.layoutParams.height = 150
+        imageView.setImageResource(R.drawable.digimon)
 
     }
 }
